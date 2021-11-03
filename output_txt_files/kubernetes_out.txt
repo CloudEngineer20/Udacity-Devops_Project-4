@@ -1,0 +1,8 @@
+(.Udacity-Devops_Project-4) voclabs:~/environment/Udacity-Devops_Project-4/project-ml-microservice-kubernetes (master) $ kubectl get pods
+NAME    READY   STATUS    RESTARTS   AGE
+mlapp   1/1     Running   0          72s
+
+^C(.Udacity-Devops_Project-4) voclabs:~/environment/Udacity-Devops_Project-4/project-ml-microservice-kubernetes (master) $ kubectl port-forward pod/mlapp 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
